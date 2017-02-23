@@ -20,7 +20,7 @@ public:
     //Destructor
     ~Array<Type>();
     //Copy Constructor
-    Array<Type>(const Array<Type> & toBeCopied);
+    Array<Type>(const Array<T   ype> & toBeCopied);
     
     //Helper methods
     int getSize() const;
@@ -60,7 +60,7 @@ Array<Type> :: Array(const Array<Type> & toBeCopied)
  The const modifier at the end of the method is used to denote that the
  method does not impact the state of the object.
  */
-template <class Type>
+tempate <class Type>
 Node<Type> * Array<Type> :: getFront() const
 {
     return front;

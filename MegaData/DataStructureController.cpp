@@ -18,9 +18,6 @@ DataStructureController:: DataStructureController()
     numberNode = Node<int>();
 }
 void DataStructureController:: testNodes()
-{
-    
-}
 
 void DataStructureController :: start()
 {

@@ -10,16 +10,13 @@
 #define DataStructureController_hpp
 
 #include "../Model/Node.hpp"
-#include "../Model/Array.h"
+#include "../Model/Array.hpp"
 #include <string>
 
 class DataStructureController
 {
 private:
     void testIntArray();
-    Node<int> numberNode;
-    Node<string> wordNode;
-    void testNodes();
 public:
     DataStructureController();
     void start();

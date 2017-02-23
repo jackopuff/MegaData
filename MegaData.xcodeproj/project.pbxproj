@@ -6,6 +6,13 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B7C477321E5CDB3700252304 /* DataStructureController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7C4772F1E5CDB3700252304 /* DataStructureController.cpp */; };
+		B7C477331E5CDB3700252304 /* NodeRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7C477311E5CDB3700252304 /* NodeRunner.cpp */; };
+		B7C4773B1E5CDB4900252304 /* IntNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7C477361E5CDB4900252304 /* IntNode.cpp */; };
+		B7C4773C1E5CDB4900252304 /* IntNodeArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7C477381E5CDB4900252304 /* IntNodeArray.cpp */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		B74572C21E4BA1D500FBD30B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -19,9 +26,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B74572C41E4BA1D500FBD30B /* MegaData */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = MegaData; path = "/Users/jcar8281/Documents/C++/MegaData/build/Debug/MegaData"; sourceTree = "<absolute>"; };
 		B74572DC1E4BBC8800FBD30B /* Controller */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Controller; sourceTree = "<group>"; };
 		B74572DD1E4BBC8800FBD30B /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Model; sourceTree = "<group>"; };
+		B7B299B51E5F705F00B56F43 /* Array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Array.h; path = Model/Array.h; sourceTree = "<group>"; };
+		B7B299B61E5F706800B56F43 /* List.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
+		B7C4772D1E5CC61300252304 /* MegaData */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MegaData; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7C4772F1E5CDB3700252304 /* DataStructureController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DataStructureController.cpp; path = Controller/DataStructureController.cpp; sourceTree = "<group>"; };
+		B7C477301E5CDB3700252304 /* DataStructureController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DataStructureController.hpp; path = Controller/DataStructureController.hpp; sourceTree = "<group>"; };
+		B7C477311E5CDB3700252304 /* NodeRunner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NodeRunner.cpp; path = Controller/NodeRunner.cpp; sourceTree = "<group>"; };
+		B7C477351E5CDB4900252304 /* Array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Array.h; path = Model/Array.h; sourceTree = "<group>"; };
+		B7C477361E5CDB4900252304 /* IntNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNode.cpp; path = Model/IntNode.cpp; sourceTree = "<group>"; };
+		B7C477371E5CDB4900252304 /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNode.hpp; path = Model/IntNode.hpp; sourceTree = "<group>"; };
+		B7C477381E5CDB4900252304 /* IntNodeArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNodeArray.cpp; path = Model/IntNodeArray.cpp; sourceTree = "<group>"; };
+		B7C477391E5CDB4900252304 /* IntNodeArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNodeArray.hpp; path = Model/IntNodeArray.hpp; sourceTree = "<group>"; };
+		B7C4773A1E5CDB4900252304 /* Node.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Node.hpp; path = Model/Node.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,10 +63,38 @@
 		B74572C61E4BA1D500FBD30B /* MegaData */ = {
 			isa = PBXGroup;
 			children = (
+				B7C477341E5CDB4000252304 /* Model */,
+				B7C4772E1E5CDB2900252304 /* Controller */,
+				B7C4772D1E5CC61300252304 /* MegaData */,
 				B74572DC1E4BBC8800FBD30B /* Controller */,
 				B74572DD1E4BBC8800FBD30B /* Model */,
 			);
 			path = MegaData;
+			sourceTree = "<group>";
+		};
+		B7C4772E1E5CDB2900252304 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B7C4772F1E5CDB3700252304 /* DataStructureController.cpp */,
+				B7C477301E5CDB3700252304 /* DataStructureController.hpp */,
+				B7C477311E5CDB3700252304 /* NodeRunner.cpp */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B7C477341E5CDB4000252304 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B7C477351E5CDB4900252304 /* Array.h */,
+				B7C477361E5CDB4900252304 /* IntNode.cpp */,
+				B7C477371E5CDB4900252304 /* IntNode.hpp */,
+				B7C477381E5CDB4900252304 /* IntNodeArray.cpp */,
+				B7B299B61E5F706800B56F43 /* List.h */,
+				B7B299B51E5F705F00B56F43 /* Array.h */,
+				B7C477391E5CDB4900252304 /* IntNodeArray.hpp */,
+				B7C4773A1E5CDB4900252304 /* Node.hpp */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -68,7 +114,7 @@
 			);
 			name = MegaData;
 			productName = MegaData;
-			productReference = B74572C41E4BA1D500FBD30B /* MegaData */;
+			productReference = B7C4772D1E5CC61300252304 /* MegaData */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -108,6 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7C4773B1E5CDB4900252304 /* IntNode.cpp in Sources */,
+				B7C4773C1E5CDB4900252304 /* IntNodeArray.cpp in Sources */,
+				B7C477321E5CDB3700252304 /* DataStructureController.cpp in Sources */,
+				B7C477331E5CDB3700252304 /* NodeRunner.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +284,7 @@
 				B74572CD1E4BA1D500FBD30B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

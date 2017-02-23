@@ -6,7 +6,7 @@
 //  Copyright © 2017 Carter, Jackson. All rights reserved.
 //
 
-#include "DataStructureController.hpp"
+#include "DataStructureController.h"
 #include <iostream>
 using namespace std;
 

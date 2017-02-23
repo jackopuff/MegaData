@@ -3,7 +3,7 @@
 #ifndef Node_hpp
 #define Node_hpp
 
-template <class Type>
+template <class type>
 class Node
 {
 private:
