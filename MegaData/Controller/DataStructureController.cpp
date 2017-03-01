@@ -10,6 +10,8 @@
 #include <iostream>
 #include "../Model/IntNode.hpp"
 #include "../Model/IntNodeArray.hpp"
+#include "../Model/List.h"
+#include "../Model/Array.h"
 using namespace std;
 
 DataStructureController:: DataStructureController()
@@ -53,3 +55,19 @@ void DataStructureController :: testIntArray()
         cout << temp.getFromIndex(index) << "is at spot " << index << endl;
     }
 }
+void DataStructureController:: testListIntro()
+{
+    List<int> sample;
+    sample.addFront(2);
+    sample.addEnd(3);
+    sample.addFront(1);
+    cout << "This should go 1, 2, 3" << endl;
+    
+    for(int index = 0; index < sample.getSize(); index++)
+    {
+        cout<< sample.getFromIndex(index) << endl;
+    }
+    
+    cout << "Size should read 3 and is " << sample.getSize() << endl;
+}
+

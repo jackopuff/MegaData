@@ -40,6 +40,7 @@
 		B7C477381E5CDB4900252304 /* IntNodeArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNodeArray.cpp; path = Model/IntNodeArray.cpp; sourceTree = "<group>"; };
 		B7C477391E5CDB4900252304 /* IntNodeArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNodeArray.hpp; path = Model/IntNodeArray.hpp; sourceTree = "<group>"; };
 		B7C4773A1E5CDB4900252304 /* Node.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Node.hpp; path = Model/Node.hpp; sourceTree = "<group>"; };
+		B7CEDB5C1E64C76F007E2D34 /* BiDirectionalNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BiDirectionalNode.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +94,7 @@
 				B7B299B51E5F705F00B56F43 /* Array.h */,
 				B7C477391E5CDB4900252304 /* IntNodeArray.hpp */,
 				B7C4773A1E5CDB4900252304 /* Node.hpp */,
+				B7CEDB5C1E64C76F007E2D34 /* BiDirectionalNode.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";

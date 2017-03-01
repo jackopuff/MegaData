@@ -17,6 +17,7 @@ class DataStructureController
 {
 private:
     void testIntArray();
+    void testListIntro();
     Node<int> numberNode;
     Node<string> wordNode;
     void testNodes();
