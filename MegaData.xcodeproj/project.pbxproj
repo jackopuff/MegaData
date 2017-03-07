@@ -28,6 +28,7 @@
 /* Begin PBXFileReference section */
 		B74572DC1E4BBC8800FBD30B /* Controller */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Controller; sourceTree = "<group>"; };
 		B74572DD1E4BBC8800FBD30B /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Model; sourceTree = "<group>"; };
+		B7AC82161E6F456F0010BA28 /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
 		B7B299B51E5F705F00B56F43 /* Array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Array.h; path = Model/Array.h; sourceTree = "<group>"; };
 		B7B299B61E5F706800B56F43 /* List.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
 		B7C4772D1E5CC61300252304 /* MegaData */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MegaData; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +96,7 @@
 				B7C477391E5CDB4900252304 /* IntNodeArray.hpp */,
 				B7C4773A1E5CDB4900252304 /* Node.hpp */,
 				B7CEDB5C1E64C76F007E2D34 /* BiDirectionalNode.h */,
+				B7AC82161E6F456F0010BA28 /* Queue.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
