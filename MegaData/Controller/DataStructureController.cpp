@@ -10,8 +10,11 @@
 #include <iostream>
 #include "../Model/IntNode.hpp"
 #include "../Model/IntNodeArray.hpp"
-#include "../Model/List.h"
+#include "List.h"
 #include "../Model/Array.h"
+#include "../Model/IntNodeArray.hpp"
+#include "../Model/Stack.hpp"
+#include "../Model/Queue.hpp"
 using namespace std;
 
 DataStructureController:: DataStructureController()
@@ -33,6 +36,10 @@ void DataStructureController :: start()
     cout << "Finished testing" << endl;
 }
 
+void DataStructureController :: testListTiming()
+{
+    
+}
 void DataStructureController :: testIntArray()
 {
     cout << "Testing the array " << endl;
@@ -69,5 +76,18 @@ void DataStructureController:: testListIntro()
     }
     
     cout << "Size should read 3 and is " << sample.getSize() << endl;
+}
+
+void DataStructureController::testFoodQueue()
+{
+    Queue<FoodIem> tastyFood;
+    FoodItem Toing("a delicious  meal from marcel toing proud owner of restaurant ratatoing");
+    
+    tastyFood.enqueue(Toing);
+    FoodItem boring;
+    tastyFood.add(boring);
+    
+    FoodItem removed = tastyFood.dequeue();
+    cout << "The item removed from the queue was :" << removed.getFoodName() << "and should be: a delicious meal from marcel toing proud owner of restaurant ratatoing"<< endl;
 }
 

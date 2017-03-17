@@ -9,9 +9,9 @@
 #ifndef List_h
 #define List_h
 #include <iostream>
-#include "/Users/jcar8281/Documents/C++/MegaData/MegaData/Model/Node.hpp"
-#include"/Users/jcar8281/Documents/C++/MegaData/MegaData/Controller/DataStructureController.hpp"
-#include "assert.h"
+#include "../Model/Node.hpp"
+#include"../Controller/DataStructureController.hpp"
+#include <assert.h>
 
 using namespace std;
 
@@ -20,29 +20,26 @@ class List
 {
 private:
     int size;
-    Node<Type>*end;
     Node<Type>*front;
 public:
-    List();
-    List(const List<Type> & source);
+    List<Type>();
+    
     //Destructor
     ~List<Type>():
-
+    //CopyConstructor
+    List<Type>(const List<Type> & source);
     //HelperMethods
     void addAtIndex(int index, Type value);
-    Type setAtIndex(int index, Type data);
-    Type getFronIndex(int index);
-    void addFront(Type value);
+    void add(Type value);
     Type remove(int index);
-    
+    Type setAtIndex(int index, Type data);
     bool contains(Type data);
     int getSize() const;
     Node<Type>* getFront() const;
 };
 template <class Type>
-    Node<Type>*List<Type> getEnd() const;
-    {
-    }
+Node<Type>*List<Type> getEnd() const
+    {}
 template <class Type>
     void List<Type> addAtIndex(int index, Type value)
     {

@@ -24,11 +24,13 @@ public:
 template <class Type>
 BiDirectionalNode<Type> :: BiDirectionalNode() : Node()
 {
-    
+    this->nextPointer = nullpr;
+    this->previous = nullptr;
 }
-
+template <class Type>
 BiDirectionalNode<Type> :: BiDirectionalNode() : Node<Type>(data)
 {
-    
+    this->nextPointer = nullptr;
+    this->previous = nullptr;
 }
 #endif /* BiDirectionalNode_h */

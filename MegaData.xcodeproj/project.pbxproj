@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B79639241E77133D00C172D1 /* FoodItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B79639231E77133D00C172D1 /* FoodItem.cpp */; };
 		B7C477321E5CDB3700252304 /* DataStructureController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7C4772F1E5CDB3700252304 /* DataStructureController.cpp */; };
 		B7C477331E5CDB3700252304 /* NodeRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7C477311E5CDB3700252304 /* NodeRunner.cpp */; };
 		B7C4773B1E5CDB4900252304 /* IntNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7C477361E5CDB4900252304 /* IntNode.cpp */; };
@@ -26,9 +27,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B70DC0681E79B4D200F5D397 /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CircularList.hpp; sourceTree = "<group>"; };
 		B74572DC1E4BBC8800FBD30B /* Controller */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Controller; sourceTree = "<group>"; };
 		B74572DD1E4BBC8800FBD30B /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Model; sourceTree = "<group>"; };
+		B7591D4B1E71D8BD002143C0 /* DoublyLinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoublyLinkedList.hpp; sourceTree = "<group>"; };
+		B7591D4C1E71EFB9002143C0 /* DoubleList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleList.hpp; sourceTree = "<group>"; };
+		B79639221E77124800C172D1 /* FoodItem.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FoodItem.hpp; sourceTree = "<group>"; };
+		B79639231E77133D00C172D1 /* FoodItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FoodItem.cpp; sourceTree = "<group>"; };
 		B7AC82161E6F456F0010BA28 /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
+		B7AC82171E6F4B3C0010BA28 /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
 		B7B299B51E5F705F00B56F43 /* Array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Array.h; path = Model/Array.h; sourceTree = "<group>"; };
 		B7B299B61E5F706800B56F43 /* List.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
 		B7C4772D1E5CC61300252304 /* MegaData */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MegaData; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +94,7 @@
 		B7C477341E5CDB4000252304 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B7CEDB5C1E64C76F007E2D34 /* BiDirectionalNode.h */,
 				B7C477351E5CDB4900252304 /* Array.h */,
 				B7C477361E5CDB4900252304 /* IntNode.cpp */,
 				B7C477371E5CDB4900252304 /* IntNode.hpp */,
@@ -95,8 +103,13 @@
 				B7B299B51E5F705F00B56F43 /* Array.h */,
 				B7C477391E5CDB4900252304 /* IntNodeArray.hpp */,
 				B7C4773A1E5CDB4900252304 /* Node.hpp */,
-				B7CEDB5C1E64C76F007E2D34 /* BiDirectionalNode.h */,
 				B7AC82161E6F456F0010BA28 /* Queue.hpp */,
+				B7AC82171E6F4B3C0010BA28 /* Stack.hpp */,
+				B7591D4B1E71D8BD002143C0 /* DoublyLinkedList.hpp */,
+				B7591D4C1E71EFB9002143C0 /* DoubleList.hpp */,
+				B79639221E77124800C172D1 /* FoodItem.hpp */,
+				B79639231E77133D00C172D1 /* FoodItem.cpp */,
+				B70DC0681E79B4D200F5D397 /* CircularList.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -162,6 +175,7 @@
 				B7C4773C1E5CDB4900252304 /* IntNodeArray.cpp in Sources */,
 				B7C477321E5CDB3700252304 /* DataStructureController.cpp in Sources */,
 				B7C477331E5CDB3700252304 /* NodeRunner.cpp in Sources */,
+				B79639241E77133D00C172D1 /* FoodItem.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
