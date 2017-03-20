@@ -1,8 +1,9 @@
 //
 //  IntNode.hpp
-//  MegaData
+
+//  ArrayProject
 //
-//  Created by Carter, Jackson on 2/8/17.
+//  Created by Carter, Jackson on 2/6/17.
 //  Copyright © 2017 Carter, Jackson. All rights reserved.
 //
 
@@ -13,22 +14,26 @@ class IntNode
 {
 private:
     int nodeData;
-    IntNode * nodePointer;
+    IntNode * nextPointer;
+    
 public:
-    //Constructor
+    //init
     IntNode();
     IntNode(int value);
     /*
-     creates an IntNode with a specified value and next node pointer
-    */
+     Creates an IntNode with a specified value and next node pointer
+     */
     IntNode(int value, IntNode * nextNode);
-    
+   
     //Methods
     int getNodeData();
-    IntNode*getNodePointer();
+    IntNode * getNodePointer();
     
     void setNodeData(int value);
     void setNodePointer(IntNode * next);
+    
+    
+    
 };
 
 #endif /* IntNode_hpp */

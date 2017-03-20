@@ -1,6 +1,7 @@
 //
 //  IntNodeArray.cpp
-//  MegaData
+
+//  ArrayProject
 //
 //  Created by Carter, Jackson on 2/8/17.
 //  Copyright © 2017 Carter, Jackson. All rights reserved.
@@ -11,45 +12,47 @@
 
 IntNodeArray :: IntNodeArray(int size)
 {
-    assert(size> 0);
+    assert(size > 0);
     
-    this->size = size;
-    this->front = new IntNode();
+    this-> size = size;
+    this-> front = new IntNode();
     
     for(int index = 0; index < size; index++)
     {
         IntNode * current = new IntNode();
-        current ->setNodePointer(front);
+        current->setNodePointer(front);
         front = current;
     }
+    
 }
 
 int IntNodeArray :: getFromIndex(int index)
 {
-    assert(index>=0 && index < size);
+    assert(index >= 0 && index < size);
     int value = 0;
     
     IntNode * current = front;
     
     for(int position = 0; position < index; position++)
     {
-        current = current->getNodePointer();
+        current = current -> getNodePointer();
     }
+    
+    value = current->getNodeData();
     
     return value;
 }
-void IntNodeArray :: setAtIndex(int index, int value)
+
+void IntNodeArray:: setAtIndex(int index, int value)
 {
-    assert(index >= 0 && index< size);
-    
+    assert(index >= 0 && index < size);
     IntNode * current = front;
     
-    for (int spot = 0; spot < index; spot++)
+    for(int spot = 0; spot < index; spot++)
     {
-        current =current->getNodePointer();
+        current = current -> getNodePointer();
     }
-   
+    
     current->setNodeData(value);
 }
-
 

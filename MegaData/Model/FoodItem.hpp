@@ -1,15 +1,18 @@
 //
 //  FoodItem.hpp
+
 //  MegaData
 //
 //  Created by Carter, Jackson on 3/13/17.
 //  Copyright © 2017 Carter, Jackson. All rights reserved.
 //
 
-#ifndef FoodItem_h
-#define FoodItem_h
+#ifndef FoodItem_hpp
+#define FoodItem_hpp
 
+#include "FoodItem.hpp"
 #include <string>
+
 using namespace std;
 
 class FoodItem
@@ -24,8 +27,8 @@ public:
     FoodItem(string name);
     
     int getCalories();
-    string getFoodName();
     double getCost();
+    string getFoodName();
     bool isDelicious();
     
     void setCalories(int calories);
@@ -33,4 +36,5 @@ public:
     void setCost(double cost);
     void setDelicious(bool delicious);
 };
-#endif /* FoodItem_h */
+
+#endif /* FoodItem_hpp */
